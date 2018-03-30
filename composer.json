@@ -1,0 +1,39 @@
+{
+  "name": "example-vendor-name/example-package-name",
+  "type": "library",
+  "description": "example-description",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "example-author-name",
+      "email": "example-author-email"
+    }
+  ],
+  "require": {
+    "php": "^5.5 || ^7.0"
+  },
+  "conflict": {
+    "hhvm": "*"
+  },
+  "require-dev": {
+    "johnkary/phpunit-speedtrap": "^1.1 || ^2.0 || ^3.0",
+    "phpunit/phpunit": "^5.7.23 || ^6.4.3 || ^7.0",
+    "phpunitgoodpractices/polyfill": "^1.0",
+    "phpunitgoodpractices/traits": "^1.2.2",
+    "symfony/phpunit-bridge": "^3.2.2 || ^4.0"
+  },
+  "config": {
+    "optimize-autoloader": true,
+    "sort-packages": true
+  },
+  "autoload": {
+    "psr-4": {
+      "example-namespace\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "example-namespace\\Tests\\": "tests/"
+    }
+  }
+}
