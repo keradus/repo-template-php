@@ -19,7 +19,7 @@ php:
 
 env:
     global:
-        - DEFAULT_COMPOSER_FLAGS="--no-interaction --no-progress"
+        - DEFAULT_COMPOSER_FLAGS="--optimize-autoloader --no-interaction --no-progress"
         - COMPOSER_FLAGS=""
 
 stages:
